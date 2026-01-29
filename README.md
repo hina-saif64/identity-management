@@ -523,6 +523,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![Try Demo](https://img.shields.io/badge/🎭_Try_Demo-No_Setup_Required-blue?style=for-the-badge)](http://localhost:3000)
 [![Join Community](https://img.shields.io/badge/💬_Join_Community-Discord-5865f2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/hyperion)
 
-**Made with ❤️ by the Hyperion Team**
+**Made with ❤️ by the Hina Saif**
 
 </div>
