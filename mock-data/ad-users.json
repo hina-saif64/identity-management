@@ -1,0 +1,32 @@
+[
+  {
+    "samAccountName": "jdoe",
+    "displayName": "John Doe",
+    "userPrincipalName": "jdoe@hyperion.lab",
+    "enabled": true,
+    "lastLogon": "2024-02-01T09:00:00Z",
+    "passwordLastSet": "2024-01-01T10:00:00Z",
+    "department": "Engineering",
+    "title": "Software Engineer"
+  },
+  {
+    "samAccountName": "asmith",
+    "displayName": "Alice Smith",
+    "userPrincipalName": "asmith@hyperion.lab",
+    "enabled": true,
+    "lastLogon": "2024-02-02T08:30:00Z",
+    "passwordLastSet": "2024-01-15T14:20:00Z",
+    "department": "HR",
+    "title": "HR Manager"
+  },
+  {
+    "samAccountName": "bwayne",
+    "displayName": "Bruce Wayne",
+    "userPrincipalName": "bwayne@hyperion.lab",
+    "enabled": false,
+    "lastLogon": "2023-12-01T18:00:00Z",
+    "passwordLastSet": "2023-11-20T09:00:00Z",
+    "department": "Executive",
+    "title": "CEO"
+  }
+]

@@ -1,0 +1,356 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Beautiful UI Styles */
+@layer components {
+
+  /* Glass morphism effect */
+  .glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+
+  .dark .glass {
+    background-color: rgba(31, 41, 55, 0.75);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+  }
+
+  /* Beautiful animations */
+  .animate-in {
+    animation: animateIn 0.3s ease-out;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    transition: all 0.2s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Button styles */
+  .btn-primary {
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(to right, #2563eb, #4f46e5);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  }
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Additional Beautiful Styles for Header Navigation */
+@layer components {
+
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.3);
+    border-radius: 3px;
+  }
+
+  .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(71, 85, 105, 0.5);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 163, 184, 0.5);
+  }
+
+  .dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(71, 85, 105, 0.7);
+  }
+
+  /* Header navigation styles */
+  .nav-tab {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nav-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s;
+  }
+
+  .nav-tab:hover::before {
+    left: 100%;
+  }
+}
+
+/* Slide in animations */
+@keyframes slide-in-from-left-2 {
+  from {
+    transform: translateX(-8px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Notification System Animations */
+@keyframes shrink-width {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0%;
+  }
+}
+
+.animate-shrink-width {
+  animation-name: shrink-width;
+  animation-fill-mode: forwards;
+}
+
+/* Enhanced Navigation Dropdown */
+.dropdown-enter {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+}
+
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: all 200ms ease-out;
+}
+
+.dropdown-exit {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.dropdown-exit-active {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+  transition: all 150ms ease-in;
+}
+
+/* Force dropdown to be on top */
+.dropdown-force-top {
+  z-index: 99999 !important;
+  position: absolute !important;
+}
+
+/* --- PREMIUM UI UPGRADES (SUGAR LARKI EDITION) --- */
+
+/* 1. Aurora Background Animation */
+.aurora-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: #0f172a;
+  /* Slate 900 fallback */
+  background-image:
+    radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+  overflow: hidden;
+}
+
+.dark .aurora-bg::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 0.5) 0, transparent 50%),
+    radial-gradient(at 50% 10%, hsla(225, 39%, 25%, 0.5) 0, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(339, 49%, 30%, 0.3) 0, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(225, 39%, 30%, 0.5) 0, transparent 50%);
+  filter: blur(60px);
+  animation: aurora-move 20s infinite alternate ease-in-out;
+  opacity: 0.6;
+}
+
+@keyframes aurora-move {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-5%, 5%) rotate(2deg);
+  }
+
+  100% {
+    transform: translate(5%, -5%) rotate(-2deg);
+  }
+}
+
+/* 1.1 Daylight Aurora (Light Mode) */
+.aurora-bg-light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: #f8fafc;
+  /* Slate 50 fallback */
+  background-image:
+    radial-gradient(at 0% 0%, hsla(210, 100%, 96%, 1) 0, transparent 50%),
+    radial-gradient(at 50% 0%, hsla(250, 60%, 96%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(300, 50%, 96%, 1) 0, transparent 50%);
+  overflow: hidden;
+}
+
+.aurora-bg-light::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  background-image:
+    radial-gradient(at 0% 0%, hsla(210, 100%, 90%, 0.4) 0, transparent 50%),
+    radial-gradient(at 50% 10%, hsla(250, 60%, 90%, 0.4) 0, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(300, 50%, 90%, 0.3) 0, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(210, 100%, 90%, 0.4) 0, transparent 50%);
+  filter: blur(60px);
+  animation: aurora-move 20s infinite alternate ease-in-out;
+  opacity: 0.8;
+}
+
+/* 2. Enhanced Glassmorphism (Glass 2.0) */
+.glass-premium {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    inset 0 0 20px rgba(255, 255, 255, 0.5);
+  /* Inner Glow */
+}
+
+.dark .glass-premium {
+  background: rgba(17, 25, 40, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.03);
+}
+
+/* 3. Spotlight Effect Container */
+.spotlight-group {
+  position: relative;
+}
+
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* This pseudo-element creates the mouse-following glow. 
+   React/JS will update --mouse-x and --mouse-y variables. */
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 255, 255, 0.1),
+      transparent 40%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+/* 4. Text Shimmer (Gold/Premium Text) */
+.text-shimmer {
+  background: linear-gradient(to right,
+      #a855f7 20%,
+      #ec4899 40%,
+      #ef4444 60%,
+      #a855f7 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+  font-weight: 800;
+}
+
+.dark .text-shimmer {
+  background: linear-gradient(to right,
+      #818cf8 20%,
+      #c084fc 40%,
+      #e879f9 60%,
+      #818cf8 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}

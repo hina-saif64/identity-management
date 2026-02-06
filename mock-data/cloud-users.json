@@ -1,0 +1,22 @@
+{
+    "value": [
+        {
+            "id": "1111-2222-3333-4444",
+            "userPrincipalName": "jdoe@hyperion.lab",
+            "displayName": "John Doe",
+            "jobTitle": "Software Engineer",
+            "mail": "jdoe@hyperion.lab",
+            "officeLocation": "Building A",
+            "accountEnabled": true
+        },
+        {
+            "id": "5555-6666-7777-8888",
+            "userPrincipalName": "asmith@hyperion.lab",
+            "displayName": "Alice Smith",
+            "jobTitle": "HR Manager",
+            "mail": "asmith@hyperion.lab",
+            "officeLocation": "Building B",
+            "accountEnabled": true
+        }
+    ]
+}

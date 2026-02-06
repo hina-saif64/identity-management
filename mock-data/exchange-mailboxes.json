@@ -1,0 +1,26 @@
+{
+  "status": "success",
+  "mailboxes": [
+    {
+      "userPrincipalName": "jdoe@hyperion.lab",
+      "displayName": "John Doe",
+      "primarySmtpAddress": "jdoe@hyperion.lab",
+      "recipientType": "UserMailbox",
+      "remoteRoutingAddress": "jdoe@hyperion.mail.onmicrosoft.com",
+      "alias": "jdoe",
+      "samAccountName": "jdoe"
+    },
+    {
+      "userPrincipalName": "asmith@hyperion.lab",
+      "displayName": "Alice Smith",
+      "primarySmtpAddress": "asmith@hyperion.lab",
+      "recipientType": "UserMailbox",
+      "remoteRoutingAddress": null,
+      "alias": "asmith",
+      "samAccountName": "asmith"
+    }
+  ],
+  "count": 2,
+  "exchangeServer": "EXCH01.hyperion.lab",
+  "fetchedAt": "2024-02-05T12:00:00Z"
+}

@@ -1,0 +1,18 @@
+{
+    "value": [
+        {
+            "id": "ws-001",
+            "name": "Sales Analytics",
+            "type": "Workspace",
+            "state": "Active",
+            "capacityId": "cap-001"
+        },
+        {
+            "id": "ws-002",
+            "name": "Executive Dashboard",
+            "type": "Workspace",
+            "state": "Active",
+            "capacityId": "cap-002"
+        }
+    ]
+}
