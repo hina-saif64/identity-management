@@ -64,6 +64,31 @@ Built on a robust, modular stack designed for scalability and security:
 
 ---
 
+## Compliance & Identity Governance
+
+Hyperion includes an Identity Governance module that maps identity-related findings to recognised cybersecurity frameworks.
+
+Supported frameworks include:
+
+- NIST Cybersecurity Framework (CSF)
+- ISO/IEC 27001
+- CIS Controls
+- UK Cyber Essentials
+- GDPR
+
+The platform analyses identity data and highlights governance issues such as:
+
+- Dormant privileged accounts
+- Missing MFA
+- Excessive administrative permissions
+- Password policy exceptions
+- Shared administrative accounts
+- Inactive licensed users
+
+Rather than replacing compliance tools, Hyperion provides organisations with actionable identity governance insights to support security reviews and audit readiness.
+
+---
+
 ## 🖥️ Demo Environment
 
 This repository contains a **fully functional demonstration build** of Hyperion. It runs in a self-contained "Demo Mode" using simulated backend systems.
