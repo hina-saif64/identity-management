@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-2.4.0-green.svg) ![Status](https://img.shields.io/badge/status-Production%20Ready-success.svg) ![Security](https://img.shields.io/badge/security-RBAC%20Enabled-blueviolet.svg)
 
-**Hyperion** is an enterprise-grade Identity & Access Management (IAM) platform designed to unify Active Directory, Exchange, and Cloud Governance into a single, highly efficient control plane. It bridges the gap between complex PowerShell operations and intuitive L1/L2 support workflows.
+**Hyperion** is an enterprise-grade Identity Intelligence platform designed to unify Active Directory, Exchange, and Cloud Governance into a single, highly efficient control plane. It bridges the gap between complex PowerShell operations and intuitive L1/L2 support workflows.
 
 ---
 
