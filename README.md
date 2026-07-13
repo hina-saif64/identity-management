@@ -1,4 +1,4 @@
-# Hyperion Identity Management System
+# Hyperion Identity Intelligence Platform
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-2.4.0-green.svg) ![Status](https://img.shields.io/badge/status-Production%20Ready-success.svg) ![Security](https://img.shields.io/badge/security-RBAC%20Enabled-blueviolet.svg)
 
